@@ -21,19 +21,10 @@ const Form = () => {
             setData({...data, [name]:value})
         }
     
-        const navigate = useNavigate()
+      const navigate = useNavigate()
       const SubmitForm = () => {
-        // setCounter(true) 
         navigate('/prescription',{state:data})
       }
-    
-      // if(counter){
-      //   return (
-      //       <>
-      //       <Prescription data={data} />
-      //       </>
-      //   )
-      // }else{
     
       return (
         <div className='container'>
